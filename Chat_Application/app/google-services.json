@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "552294423453",
+    "firebase_url": "https://chatapplication-7a81c.firebaseio.com",
+    "project_id": "chatapplication-7a81c",
+    "storage_bucket": "chatapplication-7a81c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552294423453:android:e3057792a5d3f37f",
+        "android_client_info": {
+          "package_name": "com.praveen.android.chatapplication"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552294423453-mbs5jkieqhdsljb60rk0savrprv1jolo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.praveen.android.chatapplication",
+            "certificate_hash": "a672e8e8592a86215b08c30ab7ac42053fe9249d"
+          }
+        },
+        {
+          "client_id": "552294423453-a0irnii540guaicnkc54l4bigl30ifgd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBJoFvr63lZxG8yHjQnvKZpHG-ih5xgWHw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552294423453-a0irnii540guaicnkc54l4bigl30ifgd.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

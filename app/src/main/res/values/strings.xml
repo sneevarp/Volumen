@@ -14,4 +14,7 @@
         completions."
     </string>
     <string name="title_Feed">Feed</string>
+    <string name="click_here_to_set_as_your_favourites">Click here to Set as your Favourites</string>
+    <string name="click_to_dislike_it">Click to dislike it</string>
+    <string name="comment">Comment</string>
 </resources>

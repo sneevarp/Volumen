@@ -8,28 +8,72 @@
 
     <android.support.v7.widget.CardView
         android:layout_width="395dp"
-        android:layout_height="136dp"
+        android:layout_height="261dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="8dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" >
+        app:layout_constraintTop_toTopOf="parent">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:id="bookItem_Linear">
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/titleRow"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/bookTitle_Item"
+                    android:layout_width="338dp"
+                    android:layout_height="match_parent"
+                    android:gravity="bottom|start|center_horizontal|center_vertical"
+                    android:textColor="@color/colorPrimary"
+                    android:textSize="30sp" />
+
+                <ImageButton
+                    android:id="@+id/FavouriteNo"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/click_here_to_set_as_your_favourites"
+                    app:srcCompat="@android:drawable/btn_star_big_off" />
+
+                <ImageButton
+                    android:id="@+id/imageButton3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:contentDescription="@string/click_to_dislike_it"
+                    android:visibility="gone"
+                    app:srcCompat="@android:drawable/btn_star_big_on" />
+            </LinearLayout>
 
             <TextView
-                android:id="@+id/bookTitle_Item"
+                android:id="@+id/datePostedText"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
-                android:gravity="bottom|start|center_horizontal|center_vertical"
-                android:textColor="@color/colorPrimary"
-                android:textSize="30sp" />
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/contentspaceText"
+                android:layout_width="match_parent"
+                android:layout_height="148dp" />
+
+            <Button
+                android:id="@+id/commentButton"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:backgroundTintMode="screen"
+                android:gravity="start"
+                android:text="@string/comment"
+                android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                android:textSize="12sp" />
+
         </LinearLayout>
 
     </android.support.v7.widget.CardView>

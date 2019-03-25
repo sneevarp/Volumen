@@ -22,7 +22,25 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.028" />
+        app:layout_constraintVertical_bias="0.012" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="53dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.975"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.925"
+        app:srcCompat="@android:drawable/ic_input_add" />
 
     <LinearLayout
         android:id="@+id/feedPageLayout"
@@ -39,8 +57,11 @@
         app:layout_constraintTop_toBottomOf="@+id/title_Feed">
 
         <SearchView
+            android:id="@+id/searchView"
             android:layout_width="match_parent"
-            android:layout_height="36dp" />
+            android:layout_height="36dp">
+
+        </SearchView>
 
         <ScrollView
             android:id="@+id/scrollview_feed"
@@ -56,9 +77,10 @@
                 <android.support.v7.widget.RecyclerView
                     android:id="@+id/FeedRecycler"
                     android:layout_width="match_parent"
-                    android:layout_height="518dp" />
+                    android:layout_height="wrap_content" />
             </LinearLayout>
         </ScrollView>
+
     </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>

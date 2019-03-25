@@ -2,7 +2,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     package="com.project.android.volumen">
-
     <!-- To auto-complete the email text field in the login form with the user's emails -->
     <uses-permission android:name="android.permission.GET_ACCOUNTS" />
     <uses-permission android:name="android.permission.READ_PROFILE" />
@@ -16,26 +15,25 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".FeedActivity"></activity>
         <activity
             android:name=".LoginActivity"
             android:label="@string/title_activity_login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".NewPassActivity"
-            android:label="NewPassActivity">
-        </activity>
+            android:label="NewPassActivity"></activity>
         <activity
             android:name=".RegisterActivity"
-            android:label="RegisterActivity">
-        </activity>
-
-        <activity android:name=".MainActivity"
-            android:label="MainActivity">
-        </activity>
+            android:label="RegisterActivity"></activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="MainActivity"></activity>
     </application>
 
 </manifest>

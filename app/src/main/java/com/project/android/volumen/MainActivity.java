@@ -17,7 +17,7 @@ import com.project.android.volumen.LoginActivity;
 
 public class MainActivity extends AppCompatActivity {
     TextView textView;
-    Button btnDeleteUser,btnLogout;
+    Button btnDeleteUser,btnLogout, btnFeed;
     FirebaseAuth firebaseAuth;
     private FirebaseAuth.AuthStateListener  authStateListener;
 
@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         textView = (TextView) findViewById(R.id.textView1);
         btnDeleteUser =(Button) findViewById(R.id.kullaniciSil);
         btnLogout =(Button) findViewById(R.id.cikis_yap);
-
+        btnFeed = (Button)findViewById(R.id.enterFeed);
         firebaseAuth = FirebaseAuth.getInstance();
 
         authStateListener = new FirebaseAuth.AuthStateListener() {
@@ -70,6 +70,13 @@ public class MainActivity extends AppCompatActivity {
                 firebaseAuth.signOut();
                 startActivity(new Intent(getApplicationContext(), LoginActivity.class));
                 finish();
+            }
+        });
+
+        btnFeed.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), FeedActivity.class));
             }
         });
 

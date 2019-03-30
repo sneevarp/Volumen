@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    tools:context=".FeedFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <!-- viewmodel parameter -->
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/feedCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:background="@color/colorPrimaryDark"
+            android:padding="10dp"
+            app:cardCornerRadius="4dp"
+            tools:layout_editor_absoluteX="5dp"
+            tools:layout_editor_absoluteY="5dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="1dp"
+                android:background="@color/colorPrimaryDark"
+                android:orientation="vertical"
+                android:padding="5dp">
+
+                <LinearLayout
+                    android:id="@+id/titleRow"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/bookTitle_Item"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_margin="1dp"
+                        android:layout_weight="1"
+                        android:background="@color/common_google_signin_btn_text_dark_default"
+                        android:gravity="bottom|start|center_horizontal|center_vertical"
+                        android:hint="Enter a title"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="30sp" />
+
+                    <ImageButton
+                        android:id="@+id/disLikeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:background="@color/common_google_signin_btn_text_dark_default"
+                        android:contentDescription="@string/click_here_to_set_as_your_favourites"
+                        android:visibility="gone"
+                        app:srcCompat="@android:drawable/btn_star_big_off" />
+
+                    <ImageButton
+                        android:id="@+id/likeButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:background="@color/common_google_signin_btn_text_dark_default"
+                        android:contentDescription="@string/click_to_dislike_it"
+                        android:visibility="gone"
+                        app:srcCompat="@android:drawable/btn_star_big_on" />
+
+                    <ImageView
+                        android:id="@+id/fragmentCloseButton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:background="@color/common_google_signin_btn_text_dark_default"
+                        android:contentDescription="@string/click_to_dislike_it"
+                        android:src="@android:drawable/ic_menu_close_clear_cancel"
+                        android:visibility="visible" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/datePostedText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="@color/common_google_signin_btn_text_dark_default"
+                    android:visibility="gone" />
+
+                <EditText
+                    android:id="@+id/contentspaceText"
+                    android:layout_width="match_parent"
+                    android:layout_height="210dp"
+                    android:layout_margin="1dp"
+                    android:background="@color/common_google_signin_btn_text_dark_default"
+                    android:hint="Type your detail here..."
+                    android:textSize="16dp" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right">
+                <Button
+                    android:id="@+id/commentButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:backgroundTintMode="screen"
+                    android:gravity="start"
+                    android:text="@string/comment"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="12sp"
+                    android:visibility="gone" />
+
+                <Button
+                    android:id="@+id/OkayButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:layout_margin="1dp"
+                    android:backgroundTintMode="screen"
+                    android:text="@string/click_add_button"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+                    android:textSize="12sp"
+                    android:visibility="visible" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+
+</FrameLayout>

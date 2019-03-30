@@ -6,6 +6,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical">
 
+<!-- viewmodel parameter -->
 
     <android.support.v7.widget.CardView
         android:id="@+id/feedCard"

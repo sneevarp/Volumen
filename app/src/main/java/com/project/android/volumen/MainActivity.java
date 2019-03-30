@@ -87,6 +87,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         firebaseAuth.addAuthStateListener(authStateListener);
+        Toast.makeText(this, "Welcome "+ firebaseAuth.getCurrentUser().getDisplayName(), Toast.LENGTH_SHORT).show();
     }
 
     @Override

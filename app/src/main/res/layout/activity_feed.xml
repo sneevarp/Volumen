@@ -62,6 +62,7 @@
         android:layout_marginBottom="15dp"
         android:clickable="true"
         android:focusable="true"
+        android:onClick="addNewFeed"
         app:srcCompat="@android:drawable/ic_input_add" />
     </FrameLayout>
 </LinearLayout>

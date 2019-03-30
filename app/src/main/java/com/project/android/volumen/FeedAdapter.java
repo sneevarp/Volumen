@@ -1,6 +1,5 @@
 package com.project.android.volumen;
 
-import android.media.Image;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
@@ -12,13 +11,12 @@ import android.widget.TextView;
 
 import com.project.android.volumen.Feed.FeedData;
 
-import org.w3c.dom.Text;
+import java.util.ArrayList;
 
-import java.util.List;
 
 public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.MyViewHolder>
 {
-    List<FeedData> mDataset;
+    ArrayList<FeedData> mDataset;
     public static class MyViewHolder extends RecyclerView.ViewHolder {
         // each data item is just a string in this case
 
@@ -40,9 +38,10 @@ public class FeedAdapter extends RecyclerView.Adapter<FeedAdapter.MyViewHolder>
         }
     }
 
-    public FeedAdapter(List<FeedData> myDataset) {
+    public FeedAdapter(ArrayList<FeedData> myDataset) {
         mDataset = myDataset;
     }
+
     @NonNull
     @Override
     public FeedAdapter.MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {

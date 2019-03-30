@@ -16,7 +16,6 @@
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
         <activity android:name=".FeedActivity">
-            android:theme="@android:style/Theme.NoTitleBar">
         </activity>
         <activity
             android:name=".LoginActivity"
